@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i=0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex>x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel,5000);
+    }
+  </script>
+  
+  <style>
+  .mySlides {
+    height:400px;
+    width:100%;
+    display:none;
+  }
+  </style>
+  
+  
+  
+</head>
+
+
+  <header>
+    <div class="w3-row-padding w3-hide-small">
+      <div class="w3-threequarter w3-display-container">
+        <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/d/de/SaltoAngel4.jpg" />
+        <img class="mySlides" src="http://1.bp.blogspot.com/-NeGDYGjuBI8/UdFRSl28cbI/AAAAAAAAWrw/tJNkpRp4QxI/s1024/Waterfalls+Scenery+Wallpapers+%25281%2529.jpg" />
+      </div>
+      <div class="w3-quarter w3-center">
+        <h1>Web Part Zone 1</h1>
+      </div>
+    </div>
+  </header>
+  
+  <body>
+    <div class="w3-row-padding w3-center">
+      <div class="w3-third">
+        <h3>Web Part Zone 2</h3>
+      </div>
+     <div class="w3-third">
+        <h3>Web Part Zone 3</h3>
+      </div>
+      <div class="w3-third">
+        <h3>Web Part Zone 4</h3>
+      </div>
+    </div>  
+  </body>
+  <footer>
+    <div class="w3-row-padding w3-hide-small w3-center">
+      <div class="w3-threethird">
+        <h3>Web Part Zone 5</h3>
+      </div>
+    </div>
+  
+  </footer>
+  
+  
+</html>
+
